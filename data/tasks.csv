@@ -1,8 +1,0 @@
-task_id,task_name,pre_ai_hours,post_ai_hours,verification_hours,adoption_rate,error_severity,accountability_constraint,compression_type
-T1,Financial/disclosure data compilation,2.5,0.2,0.1,0.95,2,0,high_compression
-T2,LLM opinion draft & RAG citation,3.0,0.1,0.2,0.80,3,0,high_compression
-T3,Citation source verification (fact-check),1.5,2.5,2.5,0.40,5,1,partial_or_irreducible
-T4,Chatbot answer/manual refinement,1.0,0.4,0.3,0.85,2,0,partial
-T5,System grade monotonicity check,2.0,0.3,0.2,0.90,4,0,high_compression
-T6,Evaluator override rationale drafting,0.5,1.5,1.5,0.10,5,1,irreducible
-T7,Governance logging packaging,1.5,0.2,0.1,0.98,3,1,high_compression
