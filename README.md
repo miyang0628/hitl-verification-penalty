@@ -43,7 +43,8 @@ The bridging variable across all three is the verification cost `v_i(f)`.
 ├── notebooks/
 │   ├── 01_data_integrity.ipynb        # Consistency checks; parameter reconciliation
 │   ├── 02_theorem_verification.ipynb  # Symbolic checks of Propositions 1-3 and Corollary 3.1
-│   └── 03_figures_tables.ipynb        # Generates all figures and tables
+│   ├── 03_figures_tables.ipynb        # Generates all figures and tables
+│   └── 04_simulation_verification.ipynb # Discrete-event check of the coupled queue
 ├── results/
 │   ├── figures/                  # PNG + PDF, grayscale, 600 dpi, no captions
 │   └── tables/                   # CSV + LaTeX
@@ -84,6 +85,7 @@ All figures are **grayscale**, **600 dpi**, saved as both **PNG and PDF**, and r
 | `fig3_governance_capacity` | Governance-capacity tradeoff: minimum reviewers vs friction `f` |
 | `fig4_optimal_friction`    | Optimal-friction surface `f*` over error-cost scale and service-time sensitivity |
 | `fig5_mgc_waiting`         | M/G/c mean waiting time vs arrival rate at the Stage-6 bottleneck |
+| `fig6_sim_verification`    | Simulation vs analytical (M/G/1 exact; M/G/c KLB) |
 
 ---
 
@@ -98,6 +100,7 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute --inplace notebooks/01_data_integrity.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/02_theorem_verification.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/03_figures_tables.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/04_simulation_verification.ipynb
 ```
 
 Or open the notebooks interactively with `jupyter lab` / `jupyter notebook` and run all cells.
