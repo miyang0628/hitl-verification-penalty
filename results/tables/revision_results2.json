@@ -1,0 +1,30 @@
+{
+  "joint": {
+    "c": 1,
+    "f": 4.0,
+    "cost": 7.125,
+    "x_by_type": {
+      "high_compression": 1.0,
+      "partial_or_irreducible": 0.0,
+      "partial": 1.0,
+      "irreducible": 0.0
+    }
+  },
+  "season": {
+    "mult": [
+      1,
+      2,
+      3
+    ],
+    "mean": [
+      0.013,
+      0.538,
+      4.329
+    ],
+    "p95": [
+      0.0,
+      3.29,
+      13.82
+    ]
+  }
+}

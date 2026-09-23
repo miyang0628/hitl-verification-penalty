@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Per-task delegation parameters.}
+\label{tab:task}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Task & Name & Pre-AI tau\_i = g\_i (h) & Post-AI observed (h) & v\_i (h) & Net tau-v (h) & Severity (1-5) & e\_i = sev/5 & Delegation loss & Accountability \\
+\midrule
+T1 & Financial/disclosure data compilation & 2.500000 & 0.200000 & 0.100000 & 2.400000 & 2 & 0.400000 & False & 0 \\
+T2 & LLM opinion draft \& RAG citation & 3.000000 & 0.100000 & 0.200000 & 2.800000 & 3 & 0.600000 & False & 0 \\
+T3 & Citation source verification (fact-check) & 1.500000 & 2.500000 & 2.500000 & -1.000000 & 5 & 1.000000 & True & 1 \\
+T4 & Chatbot answer/manual refinement & 1.000000 & 0.400000 & 0.300000 & 0.700000 & 2 & 0.400000 & False & 0 \\
+T5 & System grade monotonicity check & 2.000000 & 0.300000 & 0.200000 & 1.800000 & 4 & 0.800000 & False & 0 \\
+T6 & Evaluator override rationale drafting & 0.500000 & 1.500000 & 1.500000 & -1.000000 & 5 & 1.000000 & True & 1 \\
+T7 & Governance logging packaging & 1.500000 & 0.200000 & 0.100000 & 1.400000 & 3 & 0.600000 & False & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
