@@ -1,0 +1,26 @@
+{
+  "pipeline_code": "WF-CREDIT-AI-01",
+  "bottleneck_stage": "Stage 6 (Reviewer verification & correction, HITL)",
+  "arrival_rate_per_week": 45,
+  "peak_multiplier": 3.0,
+  "working_hours_per_week": 40,
+  "num_reviewers_c": 12,
+  "mean_service_time_hours": 4.0,
+  "service_time_min_hours": 0.5,
+  "service_time_max_hours": 12.0,
+  "client_mix": {
+    "prime_share": 0.6,
+    "scarce_share": 0.4
+  },
+  "service_time_type_means": {
+    "s_fast_prime_hours": 1.33,
+    "s_slow_scarce_hours": 8.0,
+    "status": "estimated (scenario-based); consistent with reported E[S]=4.0h and prime share 0.60",
+    "derived": {
+      "E_S": 4.0,
+      "Var_S": 10.7,
+      "CV": 0.816
+    },
+    "note": "Type-level means are estimated, not directly observed. The min/max (0.5/12 h) are range endpoints. CV<1 makes M/M/1 inappropriate and motivates M/G/1, following the accepted companion paper."
+  }
+}
