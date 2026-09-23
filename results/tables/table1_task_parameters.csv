@@ -1,8 +1,0 @@
-Task,Name,Pre-AI (h),Post-AI (h),g_i (h),v_i (h),Net g-v (h),Delegation loss,Accountability
-T1,Financial/disclosure data compilation,2.5,0.2,2.3,0.1,2.1999999999999997,False,0
-T2,LLM opinion draft & RAG citation,3.0,0.1,2.9,0.2,2.6999999999999997,False,0
-T3,Citation source verification (fact-check),1.5,2.5,-1.0,2.5,-3.5,True,1
-T4,Chatbot answer/manual refinement,1.0,0.4,0.6,0.3,0.3,False,0
-T5,System grade monotonicity check,2.0,0.3,1.7,0.2,1.5,False,0
-T6,Evaluator override rationale drafting,0.5,1.5,-1.0,1.5,-2.5,True,1
-T7,Governance logging packaging,1.5,0.2,1.3,0.1,1.2,False,1
